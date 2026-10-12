@@ -35,12 +35,6 @@ if ! uv pip show speciesnet; then
     uv pip install speciesnet
 fi
 
-# Unzip data
-if [ ! -d data ]; then
-    echo "Unzipping data"
-    unzip drive/MyDrive/AI-Intervene-Camera-Traps/data.zip -d .
-fi
-
 # Download models
 if [ ! -d models ]; then
     mkdir models
